@@ -1,0 +1,110 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-h {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    background-color: black;
+  }
+  
+ul{
+  max-width: 375px;
+}
+
+li {
+      display: inline-block;
+      background-color: black;
+  }
+  
+li a {
+    display: inline-block;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background .6s;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+      background-color: rgb(0, 4, 255);
+      color: white;
+  }
+
+.home{
+    background-color: red;
+}
+.planos{
+    background-color: red;
+}
+.servicos{
+    background-color: red;
+}
+.contato{
+    background-color: red;
+}
+.sobre{
+    background-color: red;
+}
+
+.nomeslogan{
+    font-size: 30px;
+}
+
+.conferirestabelecimento{
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.dataehora{
+    display: flex;
+}
+
+.main{
+    position: relative;
+    top: 50px;
+    padding-top: 20px;
+}
+
+.iniciotexto{
+    font-size: 18px;
+}
+
+.textosobre{
+    font-size: 14px;
+}
+
+.sloganinicial{
+    color: silver;
+}
+
+.clicaplanos{
+    color: red;
+    font-size: 26px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    text-align: left;
+}
+
+.imgpromo1{
+    margin: 2px 16px;
+    text-align: center;
+}
+
+.situaçãodoestacionamento24h{
+    float: right;
+    text-align: right;
+}
+
+.venhaproveitar{
+    text-align: center;
+}
