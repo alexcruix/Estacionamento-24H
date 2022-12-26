@@ -7,8 +7,20 @@ body{
     height: 100%;
 }
 
+h3{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
 form{
-    width: 300px;
+    background-color: black;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    left: 0%;
+    position: absolute;
+    right: 0%;
     margin: 200px auto;
     text-align: center;
 }
