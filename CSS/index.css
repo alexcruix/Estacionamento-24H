@@ -10,6 +10,7 @@ Variaveis
     --white-color: #ffffff;
     --points-list: #cccccc;
     --line-input: #d9d9d9;
+    --invalid-field: #E74C3C;
 }
 
 /*
@@ -277,4 +278,9 @@ a:hover{
     top: 45%;
     transform: translateY(-50%);
     left: 0;
+}
+
+.wrap-input-invalid{
+    width: 100%;
+    border-bottom: solid 2px var(--invalid-field);
 }
