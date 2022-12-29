@@ -9,78 +9,93 @@
     <meta property="og:locale" content="br" />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="CSS/index.css" media="screen,print" />
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-    <link rel="stylesheet" href="/Estacionamento 24H/CSS/minimal.css">
-    <title> Login - Estacionamento 24 Horas</title>
+    <link rel="stylesheet" href="CSS/style.css" media="screen,print" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Estacionamento 24 Horas - Inicial</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="container-login">
-                <div class="wrap-login">
-                <form class="login-form" id="login-form">
-                    <Span class="login-form-title">
-                       <b> Login <br> Estacionamento 24H</b>
-                    </Span>
+<nav class="menu-h">       
+    <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+</nav>  
 
-                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
-                        <input class="input-form" type="email" name="email" autocomplete="off">
-                        <span class="focus-input-form" data-placeholder="E-mail"></span>
-                    </div>
-                    <div class="wrap-input wrap-input-invalid margin-top-35">
-                        <input class="input-form" type="password" name="password">
-                        <span class="focus-input-form" data-placeholder="Senha"></span>
-                    </div>
-                    <div class="container-login-form-btn">
-                        <button class="login-form-btn">
-                            Login
-                        </button>
-                    </div>
+<header>
+<br>
+<br>
+<br>
+<h1 id="logado"></h1>
 
-                    <ul class="login-utils">
-                        <li class="margin-top-8 margin-botton-8">
-                            <span class="text1">
-                                Esqueceu sua 
-                            </span>
-                            <a href="#" class="text2">
-                                senha?
-                            </a>
-                        </li>
-                        <li class="margin-top-8 margin-botton-8">
-                            <span class="text1">
-                                Não tem conta?
-                            </span>
-                            <a href="#" class="text2">
-                                Criar
-                            </a>
-                        </li>
-                    </ul>
-                </form>
+<button onclick="sair()">Sair</button>
+            <div class="situaçãodoestacionamento24h">
+                <p class="abertooufechado">Aberto</p>
+                <p class="quantidadedecarros">Numero de Carros: 12 vagas livres</p>
+                <p class="numerodevagas">Numero de Vagas: 30 vagas</p>
             </div>
-        </div>
-    </div>
-    <script>
-        let inputs = document.getElementsByClassName('input-form');
-        for (let input of inputs) {
-            input.addEventListener("blur", function() {
-                if(input.value.trim() != ""){
-                    input.classList.add("has-val");
-                } else {
-                    input.classList.remove("has-val");
-                }
-            });
-        }
+        <section>
+            <figure class="logoestacionamento24h"> 
+                <a href="index.html"><img src="img/Logo estacionamento 24h.gif" href="index.html" width="100px" height="100px"></a>
+            </figure>
+        </section>
 
-            let form = document.getElementsById('login-form');
-        form.addEventListener("submit", function(event) {
-            let inputs = document.getElementsByClassName('input-form');
-            for (let input of inputs){
-                if(input.value.trim() == ""){
-                    input.parantElement.classList.add("wrap-input-invalid");
-        }
-        }
-        event.preventDefault();
-        });
-    </script>
+        
+          <b class="nomeslogan"> <strong style="color: red;" >E</strong>stacionamento <strong style="color: blue;">2</strong>4H - <strong style="color: green;">I</strong>nicial</b>
+          <p class="sloganinicial">Para sua proteção!!</p>
+        
+        <div class="dataehora">            
+                <p id="demo"></p>        
+            <script>
+            const d = new Date ();      
+            document.getElementById("demo").innerHTML = d;
+            </script>
+        </div>
+  
+
+</header>
+<hr>
+    <br>
+    <br>
+   <p class="conferirestabelecimento">Venha conferir nosso estabelecimento</p>
+<main>
+    <br>
+    <br>
+    <section class="col-hd-12 col-t-10">
+        <div class="iniciotexto">
+<hr>
+            <h2> &nbsp;&nbsp; Estacionamento 24H</h2>
+        </div>
+        <br>
+        <br>
+        <div class="textosobre">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esta é uma empresa, que veio
+ para melhorar a qualidade dos estacionamento, com a inovação de smartphones e tablet, para saber
+se tem vaga para estacionar o carro,moto ou bicicleta.</p>
+<br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trazer a tecnologia para sua mão,
+para facilitar a vida de todas as pessoas, assim como consegue ver se à vaga para colocar seu utilítario
+também consegue entrar em contato com o funcionario do estabelecimento para guardar a vaga ou perguntar
+se consegue vaga daqui alguns minutos.</p>
+<br><br>
+        </div>
+        <div class="imgpromo1">
+            <a href="promocao.html"><img src="img/Logo estacionamento 24h promo.gif" alt="promocoes" width="200px" height="200px"></a>
+            <a href="planos.html"><img src="img/Logo estacionamento 24h promo.gif" alt="planos" width="200px" height="200px"></a>
+            <a href="servicos.html"><img src="img/Logo estacionamento 24h promo.gif" alt="servicos" width="200px" height="200px"></a>
+            <a href="contato.html"><img src="img/Logo estacionamento 24h promo.gif" alt="contato" width="200px" height="200px"></a>
+            <a href="sobre.html"><img src="img/Logo estacionamento 24h promo.gif" alt="sobre" width="200px" height="200px"></a>
+        </div>
+    </section>
+
+    <div class="venhaproveitar">
+        <img src="img/Logo estacionamento 24h promo.gif" width="200px" height="200px">
+    </div>
+</main>
+
+
 </body>
 </html>
