@@ -10,7 +10,6 @@
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/index.css" media="screen,print" />
-    <script type="text/javascript" src="/Estacionamento 24H/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="/Estacionamento 24H/CSS/minimal.css">
     <title> Login - Estacionamento 24 Horas</title>
@@ -19,7 +18,7 @@
     <div class="container">
         <div class="container-login">
                 <div class="wrap-login">
-                <form class="login-form">
+                <form class="login-form" id="login-form">
                     <Span class="login-form-title">
                        <b> Login <br> Estacionamento 24H</b>
                     </Span>
@@ -28,7 +27,7 @@
                         <input class="input-form" type="email" name="email" autocomplete="off">
                         <span class="focus-input-form" data-placeholder="E-mail"></span>
                     </div>
-                    <div class="wrap-input margin-top-35">
+                    <div class="wrap-input wrap-input-invalid margin-top-35">
                         <input class="input-form" type="password" name="password">
                         <span class="focus-input-form" data-placeholder="Senha"></span>
                     </div>
@@ -60,7 +59,28 @@
             </div>
         </div>
     </div>
+    <script>
+        let inputs = document.getElementsByClassName('input-form');
+        for (let input of inputs) {
+            input.addEventListener("blur", function() {
+                if(input.value.trim() != ""){
+                    input.classList.add("has-val");
+                } else {
+                    input.classList.remove("has-val");
+                }
+            });
+        }
 
-
+            let form = document.getElementsById('login-form');
+        form.addEventListener("submit", function(event) {
+            let inputs = document.getElementsByClassName('input-form');
+            for (let input of inputs){
+                if(input.value.trim() == ""){
+                    input.parantElement.classList.add("wrap-input-invalid");
+        }
+        }
+        event.preventDefault();
+        });
+    </script>
 </body>
 </html>
