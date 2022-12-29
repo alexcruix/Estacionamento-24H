@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex de Campos Santos Toledo Camilo" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="description" content=" Estacionamento 24H" />
+    <meta property="og:locale" content="br" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/style.css" media="screen,print" />
+    <title>Estacionamento 24 Horas - Planos</title>
+</head>
+
+<body>
+    <nav class="menu-h">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="planos"><a href="planos.html">Planos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <br>
+        <div class="situaçãodoestacionamento24h">
+            <p class="abertooufechado">Aberto</p>
+            <p class="quantidadedecarros">Numero de Carros: 12 vagas livres</p>
+            <p class="numerodevagas">Numero de Vagas: 30 vagas</p>
+            </div>
+        <section>
+            <figure class="logoestacionamento24h"> 
+                <a href="index.html"><img src="../img/Logo estacionamento 24h.gif" href="index.html" width="100px" height="100px"></a>
+            </figure>
+        </section>
+
+            <b class="nomeslogan"> <strong style="color: red;" >E</strong>stacionamento <strong style="color: blue;">2</strong>4H - <strong style="color: green;">P</strong>lanos</b>
+            <p class="sloganinicial">Para sua proteção!!</p>
+
+    </header>
+
+    <div class="dataehora">        
+    <p id="demo"></p>
+    <script>
+    const d = new Date ();
+    document.getElementById("demo").innerHTML = d;
+    </script>
+    
+    </div>
+ <br>
+    <div class="planomensal">
+        <p>Plano mensal ou semanal<p>
+    </div>
+    <div class="planopromoção">
+        <p>No momento estamos sem promoção</p>
+    </div>
+    <br>
+    <div class="escritaplanomensal">
+        <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os planos para Carro, Moto ou Bicicleta, terá uma vaga exclusiva, e podera usar todos os dias no mês que é efetuado o pagamento.</P>
+    </div>
+    <br>
+<div class="opçõesdeplanos">
+    <div>
+        <p>Selecione o mês.</p>
+        <select class="mês">
+            <option value="">Selecione uma opção...</option>
+            <option value="Janeiro">Janeiro</option>
+            <option value="Fevereiro">Fevereiro</option>
+            <option value="Março">Março</option>
+            <option value="Abril">Abril</option>
+            <option value="Maio">Maio</option>
+            <option value="Junho">Junho</option>
+            <option value="Julho">Julho</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Setembro">Setembro</option>
+            <option value="Outubro">Outubro</option>
+            <option value="Novembro">Novembro</option>
+            <option value="Dezembro">Dezembro</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <p>Selecione o plano.</p>
+        <select class="planos">
+            <option value="">Selecione uma opção...</option>
+            <option value="Mensal">Mensal</option>
+            <option value="Semanal">Semanal</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <p>Selecione a condução.</p>
+        <select class="condução">
+            <option value="">Selecione uma opção...</option>
+            <option value="Carro">Carro</option>
+            <option value="Moto">Moto</option>
+            <option value="Bicicleta">Bicicleta</option>
+        </select>
+    </div>
+</div>
+
+</body>
+</html>
