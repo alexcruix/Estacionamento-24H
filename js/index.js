@@ -1,22 +1,22 @@
-if (localStorage.getItem("token") == null){
-    alert("Você precisa estar logado para acessar essa página");
-    window.location.href = "../signin.html";
-}
-
-let userLogado = JSON.parse(localStorange.getItem("userLogado"));
-
-let logado = document.querySelector("logado");
-logado.innerHTML = 'Olá ${userLogado.nome}';
-
-function sair() {
-    localStorage.removeItem("token");
-    localStorage.removeItem("userLogado");
-    window.location.href = "../signin.html";
-}
-
-
-$(document).ready(function(){
-    $(".menu").click(function(){
-        $(".keep").toggleClass("width");
+let inputs = document.getElementsByClassName('input-form');
+for (let input of inputs) {
+    input.addEventListener("blur", function() {
+        if(input.value.trim() != ""){
+            input.classList.add("has-val");
+        } else {
+            input.classList.remove("has-val");
+        }
     });
+}
+
+    let form = document.getElementsById('login-form');
+form.addEventListener("submit", function(event) {
+    let inputs = document.getElementsByClassName('input-form');
+    for (let input of inputs){
+        if(input.value.trim() == ""){
+            input.parantElement.classList.add("wrap-input-invalid");
+}
+}
+event.preventDefault();
 });
+
