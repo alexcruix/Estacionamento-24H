@@ -106,9 +106,7 @@ Utilitarios
     background-color: var(--white-color);
 }
 
-/*
-    Formulário
-*/
+/*     Formulário      */
 
 .login-form {
     width: 100%;
@@ -123,86 +121,7 @@ Utilitarios
     text-align: center;
 }
 
-/*
-    Input
-*/
-
-.wrap-input{
-    width: 100%;
-    position: relative;
-    border-bottom: 2px solid var(--line-input);
-}
-
-.input-form{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: var(--input-text);
-    line-height: 1.2;
-    display: block;
-    width: 100%;
-    height: 52px;
-    background: transparent;
-    padding: 0 5px;
-}
-
-.focus-input-form{
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-.focus-input-form::before{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    transition: all 0.4s;
-    background-color: var(--main-color);
-}
-
-.focus-input-form::after{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: var(--text1);
-    line-height: 1.2;
-    content: attr(data-placeholder);
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 15px;
-    left: 0px;
-    padding: 5px;
-    transition: all 0.4s;
-}
-
-.input-form:focus + .focus-input-form::after{
-    top: -20px;
-    font-size: 15px;
-}
-
-.input-form:focus + .focus-input-form::before{
-    width: 100%;
-}
-
-.has-val.input-form + .focus-input-form::after{
-    top: -20px;
-    font-size: 11px;
-}
-
-.has-val.input-form + .focus-input-form::before{
-    width: 100%;
-}
-
-/*
-Botão
-*/
+/*     Botão       */
 
 .container-login-form-btn{
     margin-top: 35px;
@@ -284,3 +203,235 @@ a:hover{
     width: 100%;
     border-bottom: solid 2px var(--invalid-field);
 }
+
+/*
+    Input
+*/
+  
+  .input-form {
+    width: 100%;
+    height: 52px;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 0px solid black ;
+    font-size: 18px;
+    color: black;
+    line-height: 1.2;
+    background-color: transparent;
+  }
+  
+  .input-form:focus {
+    outline: none;
+    border-bottom: 2px solid red;
+  }
+  
+  .focus-input-form {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+  
+  .focus-input-form::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.4s;
+    background-color: blue;
+  }
+  
+  .focus-input-form::after {
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    padding: 5px;
+    transition: all 0.4s;
+    color: silver;
+  }
+  
+  .input-form:focus + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+  }
+  
+  .input-form:focus + .focus-input-form::before {
+    width: 100%;
+  }
+  
+  .wrap-input-invalid {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .invalid-feedback {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    color: #f00;
+    transition: all 0.4s;
+    opacity: 0;
+  }
+  
+  .wrap-input-invalid:focus-within .invalid-feedback {
+    opacity: 1;
+  }
+  
+  .wrap-input-file {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-form-file {
+    width: 100%;
+    height: 52px;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .input-form-file:focus {
+    outline: none;
+    border-bottom: 2px solid #333;
+  }
+  
+  .focus-input-foto-pessoa {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+  
+  .focus-input-foto-pessoa::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+    background-color: #e70606;
+  }
+  
+  .focus-input-foto-pessoa::after {
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    padding: 5px;
+    transition: all 0.4s;
+    color: #ccc;
+  }
+  
+  .input-form-file:focus + .focus-input-foto-pessoa::after,
+  .input-form-file:valid + .focus-input-foto-pessoa::after {
+    top: -20px;
+    font-size: 15px;
+  }
+  
+  .input-form-file:focus + .focus-input-foto-pessoa::before,
+  .input-form-file:valid + .focus-input-foto-pessoa::before {
+    width: 100%;
+  }
+  
+  .file-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    line-height: 52px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+    transition: all 0.4s;
+  }
+  
+  .input-form-file:focus + .focus-input-foto-pessoa + .file-name,
+  .input-form-file:valid + .focus-input-foto-pessoa + .file-name {
+    top: -20px;
+    font-size: 15px;
+  }
+    
+  a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  input[type="date"] {
+    padding-right: 35px;
+  }
+  
+  input[type="file"] {
+    padding-right: 35px;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container-login {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  .focus-input-form-icon {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .focus-input-form-icon:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .focus-input-form-icon img {
+    width: 20px;
+    height: 20px;
+  }
