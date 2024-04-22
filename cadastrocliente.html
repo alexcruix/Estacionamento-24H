@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex de Campos Santos Toledo Camilo" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="description" content=" Estacionamento 24H" />
+    <meta property="og:locale" content="br" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" media="screen,print" />
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/minimal.css">
+    <title> Cadastro - Estacionamento 24 Horas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-login">
+                <div class="wrap-login">
+                <form class="login-form" id="cadastro-form" novalidate enctype="multipart/form-data">
+                    <Span class="login-form-title">
+                       <b> Cadastro Cliente <br> Estacionamento 24H</b>
+                    </Span>
+
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="nome" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="Nome"></span>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="date" name="nascimento" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="Data de Nascimento"></span>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="email" name="e-mail" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="E-mail"></span>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="rg" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="RG"></span>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="endereco" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="Endereço"></span>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="cidade" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="Cidade"></span>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="tel" name="telefone" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="Telefone"></span>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35"> <br>
+                        <input class="input-form" type="file" name="foto_pessoa" id="foto_pessoa" autocomplete="off" required>
+                        <span class="focus-input-form" data-placeholder="Foto da Pessoa"></span>
+                        <label for="foto_pessoa" class="focus-input-form-icon">
+                            <img src="img/Logo estacionamento 24h.gif" alt="Add photo">
+                        </label>
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="wrap-input wrap-input-invalid margin-top-35 margin-bottom-35"> <br>
+                        <input class="input-form" type="file" name="foto_documento" id="foto_documento" autocomplete="off" required onchange="updateFileName(this)">
+                        <span class="focus-input-form" id="file-name-1" data-placeholder="Foto do Documento"></span>
+                        <label for="foto_pessoa" class="focus-input-form-icon">
+                            <img src="img/Logo estacionamento 24h.gif" alt="Add photo">
+                        </label>
+                        <span class="invalid-feedback"></span>
+                      </div>
+                    <div class="container-login-form-btn">
+                        <button class="login-form-btn" type="submit" role="button" tabindex="0">
+                            Cadastrar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Estacionamento 24H/js/cadastro.js" type="text/javascript"></script>
+</body>
+</html>
